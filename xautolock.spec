@@ -11,7 +11,7 @@ URL:		http://www.ibiblio.org/pub/Linux/X11/screensavers/
 Group:		Graphical desktop/Other
 License:	GPL
 Requires:	xlockmore
-BuildRequires:	X11-devel
+BuildRequires:	X11-devel imake
 #(nl) Needed for rman
 BuildRequires:  xorg-x11
 
