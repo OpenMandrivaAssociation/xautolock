@@ -3,7 +3,7 @@
 %define	release	%mkrel %rel
 
 Name:		xautolock
-Summary:	A program for automatically starting programs when there is inactivity under X
+Summary:	Automatically starts programs when there is inactivity under X
 Version:	%{version} 
 Release:	%{release} 
 Source0:	%{name}-%{version}.tar.bz2
