@@ -1,5 +1,5 @@
-%define	version 2.1
-%define rel	3
+%define	version 2.2
+%define rel	1
 %define	release	%mkrel %rel
 
 Name:		xautolock
@@ -10,7 +10,7 @@ Source0:	%{name}-%{version}.tar.bz2
 URL:		http://www.ibiblio.org/pub/Linux/X11/screensavers/
 Group:		Graphical desktop/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-License:	GPL
+License:	GPLv2
 Requires:	xlockmore
 BuildRequires:	X11-devel imake
 #(nl) Needed for rman
@@ -35,7 +35,7 @@ bzip2 ./xautolock.man
 install -m644 xautolock.man.bz2 -D $RPM_BUILD_ROOT%{_mandir}/man1/xautolock.man.bz2
 install -m755 xautolock -D $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/xautolock
 # Make sure all docs are readable
-chmod a+r *
+chmod a+r Changelog Readme Todo License
 
 %clean 
 rm -rf $RPM_BUILD_ROOT 
