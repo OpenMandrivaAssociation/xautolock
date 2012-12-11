@@ -46,3 +46,33 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/X11R6/bin/xautolock
 %{_mandir}/*/*
 
+
+
+%changelog
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 2.2-2mdv2011.0
++ Revision: 615491
+- the mass rebuild of 2010.1 packages
+
+* Fri Jan 01 2010 Jérôme Brenier <incubusss@mandriva.org> 2.2-1mdv2010.1
++ Revision: 484760
+- new version 2.2
+- fix license tag
+- fix install
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+    - fix no-buildroot-tag
+
+* Thu Dec 20 2007 Thierry Vignaud <tv@mandriva.org> 2.1-2mdv2008.1
++ Revision: 135587
+- BR imake
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Oct 01 2005 Nicolas L�cureuil <neoclust@mandriva.org> 2.1-2mdk
+- BuildRequires fix
+
+* Sun May 29 2005 Eskild Hustvedt <eskild@mandriva.org> 2.1-1mdk
+- Initial Mandriva Linux package
+
